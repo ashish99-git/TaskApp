@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack';
 import Splash from './src/screens/Splash';
-import PlayList from './src/screens/Playlist';
-import PlayListDetails from './src/screens/PlaylistDetails';
+import Wheather from './src/screens/Wheather';
 
 const Stack = createStackNavigator();
 
@@ -30,8 +29,7 @@ export default class App extends Component {
           },
         }}>
           <Stack.Screen name="SplashScreen" component={Splash} />
-          <Stack.Screen name="PlaylistScreen" component={PlayList} />
-          <Stack.Screen name="PlayListDetailsScreen" component={PlayListDetails} />
+          <Stack.Screen name="WheatherScreen" component={Wheather} />
 
         </Stack.Navigator>
       </NavigationContainer>
